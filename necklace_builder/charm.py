@@ -12,7 +12,6 @@ class FlowerException(Exception):
 
 class Charm(object):
     def __init__(self):
-        self.word = None
         self._color = None
         self._flower = None
 
@@ -38,7 +37,3 @@ class Charm(object):
 
     def __str__(self):
         return "%s %s" % (self.color, self.flower)
-
-    # Version 2
-    def get_custom_charm(self):
-        raise NotImplementedError
