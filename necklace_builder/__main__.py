@@ -1,9 +1,16 @@
-from necklace import Necklace
+# from necklace import Necklace
+#
+# built_necklace = Necklace()
+#
+# for charm in built_necklace.charms:
+#     charm.flower = raw_input("Pick charm flower: ")
+#     charm.color = raw_input("Pick charm color: ")
+#
+# print built_necklace
 
-built_necklace = Necklace()
+from canvas import Canvas
 
-for charm in built_necklace.charms:
-    charm.flower = raw_input("Pick charm flower: ")
-    charm.color = raw_input("Pick charm color: ")
+import time
 
-print built_necklace
+with Canvas() as game_canvas:
+    game_canvas.game_loop()
